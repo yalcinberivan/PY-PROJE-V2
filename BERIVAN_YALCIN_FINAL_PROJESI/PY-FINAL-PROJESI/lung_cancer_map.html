@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dc327cc90347a46251909d1f95d2b0f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dc327cc90347a46251909d1f95d2b0f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dc327cc90347a46251909d1f95d2b0f = L.map(
+                "map_0dc327cc90347a46251909d1f95d2b0f",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f7ac4722b1fc1ed68ebd966c884d9e7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8f7ac4722b1fc1ed68ebd966c884d9e7.addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var circle_marker_de20b521c7420e818f70ffd4611d56b8 = L.circleMarker(
+                [51.1638175, 10.4478313],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.565789473684212, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_dac32080ea9f0fab890df98dfa776811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad6c8f0a98d6760a124104c90fd839b1 = $(`<div id="html_ad6c8f0a98d6760a124104c90fd839b1" style="width: 100.0%; height: 100.0%;">Germany: 3635 cases</div>`)[0];
+                popup_dac32080ea9f0fab890df98dfa776811.setContent(html_ad6c8f0a98d6760a124104c90fd839b1);
+            
+        
+
+        circle_marker_de20b521c7420e818f70ffd4611d56b8.bindPopup(popup_dac32080ea9f0fab890df98dfa776811)
+        ;
+
+        
+    
+    
+            var marker_ce053e647edee5894b796e95ac25e871 = L.marker(
+                [51.2638175, 10.4478313],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_ecc4f479dd1d2b14443d6360973e1501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce053e647edee5894b796e95ac25e871.setIcon(icon_ecc4f479dd1d2b14443d6360973e1501);
+        
+    
+        var popup_4f906d804d5652c6a6463986758d35e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92aac4cc9594427fda94c80bee8cda5e = $(`<div id="html_92aac4cc9594427fda94c80bee8cda5e" style="width: 100.0%; height: 100.0%;">Germany: Never Smoked (3635 cases)</div>`)[0];
+                popup_4f906d804d5652c6a6463986758d35e3.setContent(html_92aac4cc9594427fda94c80bee8cda5e);
+            
+        
+
+        marker_ce053e647edee5894b796e95ac25e871.bindPopup(popup_4f906d804d5652c6a6463986758d35e3)
+        ;
+
+        
+    
+    
+            var circle_marker_c9e2a09351d965e3a5ce2b337c484dea = L.circleMarker(
+                [49.7439047, 15.3381061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.860526315789475, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_2816f10d478c8ab629ba2897820e6ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a233e0144a6465e9b2e51eaae3425a1 = $(`<div id="html_1a233e0144a6465e9b2e51eaae3425a1" style="width: 100.0%; height: 100.0%;">Czech Republic: 3747 cases</div>`)[0];
+                popup_2816f10d478c8ab629ba2897820e6ba5.setContent(html_1a233e0144a6465e9b2e51eaae3425a1);
+            
+        
+
+        circle_marker_c9e2a09351d965e3a5ce2b337c484dea.bindPopup(popup_2816f10d478c8ab629ba2897820e6ba5)
+        ;
+
+        
+    
+    
+            var marker_0f4aa80a50d5d21f12bb0ccb1b6f5a42 = L.marker(
+                [49.8439047, 15.3381061],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_ccdce1a04e0229b979c6e941f2e243e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0f4aa80a50d5d21f12bb0ccb1b6f5a42.setIcon(icon_ccdce1a04e0229b979c6e941f2e243e2);
+        
+    
+        var popup_433c51bee00a3d86c176c0bc963a2de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a93b093af271c6b70013665adc01e34f = $(`<div id="html_a93b093af271c6b70013665adc01e34f" style="width: 100.0%; height: 100.0%;">Czech Republic: Passive Smoker (3747 cases)</div>`)[0];
+                popup_433c51bee00a3d86c176c0bc963a2de8.setContent(html_a93b093af271c6b70013665adc01e34f);
+            
+        
+
+        marker_0f4aa80a50d5d21f12bb0ccb1b6f5a42.bindPopup(popup_433c51bee00a3d86c176c0bc963a2de8)
+        ;
+
+        
+    
+    
+            var circle_marker_8f9001dfddb2cc170bdc3f4edaee2dec = L.circleMarker(
+                [45.9852129, 24.6859225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.826315789473682, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_920a483cf73c5fbfb261046114aedf1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb1a0e7a6cdb4a654ed95c71d0aabf99 = $(`<div id="html_eb1a0e7a6cdb4a654ed95c71d0aabf99" style="width: 100.0%; height: 100.0%;">Romania: 3734 cases</div>`)[0];
+                popup_920a483cf73c5fbfb261046114aedf1d.setContent(html_eb1a0e7a6cdb4a654ed95c71d0aabf99);
+            
+        
+
+        circle_marker_8f9001dfddb2cc170bdc3f4edaee2dec.bindPopup(popup_920a483cf73c5fbfb261046114aedf1d)
+        ;
+
+        
+    
+    
+            var marker_ad3293f4ba24c6200c2f198c3af65ec5 = L.marker(
+                [46.0852129, 24.6859225],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_1bdcdf825c4084114a843a85a3cb2858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad3293f4ba24c6200c2f198c3af65ec5.setIcon(icon_1bdcdf825c4084114a843a85a3cb2858);
+        
+    
+        var popup_c657b458b264714480e5bae2088fccdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f467323a2a3bd0095d7ef6789032fca = $(`<div id="html_4f467323a2a3bd0095d7ef6789032fca" style="width: 100.0%; height: 100.0%;">Romania: Never Smoked (3734 cases)</div>`)[0];
+                popup_c657b458b264714480e5bae2088fccdb.setContent(html_4f467323a2a3bd0095d7ef6789032fca);
+            
+        
+
+        marker_ad3293f4ba24c6200c2f198c3af65ec5.bindPopup(popup_c657b458b264714480e5bae2088fccdb)
+        ;
+
+        
+    
+    
+            var circle_marker_f2542e1b42144dae3c4b517a834a6eae = L.circleMarker(
+                [56.8406494, 24.7537645],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.734210526315792, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_ea4a71f38f4059a89ac69066ffbc4009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e77fa88eb9501e50503ac122c04c6a6 = $(`<div id="html_6e77fa88eb9501e50503ac122c04c6a6" style="width: 100.0%; height: 100.0%;">Latvia: 3699 cases</div>`)[0];
+                popup_ea4a71f38f4059a89ac69066ffbc4009.setContent(html_6e77fa88eb9501e50503ac122c04c6a6);
+            
+        
+
+        circle_marker_f2542e1b42144dae3c4b517a834a6eae.bindPopup(popup_ea4a71f38f4059a89ac69066ffbc4009)
+        ;
+
+        
+    
+    
+            var marker_fdcdb0b4a6d96840a6ebfeeb90dddca0 = L.marker(
+                [56.9406494, 24.7537645],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_214839f703c2aeb98dcadebe49282f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdcdb0b4a6d96840a6ebfeeb90dddca0.setIcon(icon_214839f703c2aeb98dcadebe49282f65);
+        
+    
+        var popup_92e9a82503978a56d4cc0d23e1750d86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cd33fb16f160672244348cd5e24cc74 = $(`<div id="html_4cd33fb16f160672244348cd5e24cc74" style="width: 100.0%; height: 100.0%;">Latvia: Former Smoker (3699 cases)</div>`)[0];
+                popup_92e9a82503978a56d4cc0d23e1750d86.setContent(html_4cd33fb16f160672244348cd5e24cc74);
+            
+        
+
+        marker_fdcdb0b4a6d96840a6ebfeeb90dddca0.bindPopup(popup_92e9a82503978a56d4cc0d23e1750d86)
+        ;
+
+        
+    
+    
+            var circle_marker_abd95a5e6a4ff762aaaf98415786e100 = L.circleMarker(
+                [43.2581805, -77.6970101],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.610526315789475, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_166d53d864922b1427bad11025ab80e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8050df5877e411333a8637f3573decd3 = $(`<div id="html_8050df5877e411333a8637f3573decd3" style="width: 100.0%; height: 100.0%;">Greece: 3652 cases</div>`)[0];
+                popup_166d53d864922b1427bad11025ab80e9.setContent(html_8050df5877e411333a8637f3573decd3);
+            
+        
+
+        circle_marker_abd95a5e6a4ff762aaaf98415786e100.bindPopup(popup_166d53d864922b1427bad11025ab80e9)
+        ;
+
+        
+    
+    
+            var marker_bdd3ed664f9777e392d17c9205b5f8f7 = L.marker(
+                [43.3581805, -77.6970101],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_0a1fd2ea038488f06a94df7c1f0ba558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bdd3ed664f9777e392d17c9205b5f8f7.setIcon(icon_0a1fd2ea038488f06a94df7c1f0ba558);
+        
+    
+        var popup_416d7684af207308c0ecf2b9b4e7a767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cceaa5ead361aa1da1eff7f6a94910c = $(`<div id="html_8cceaa5ead361aa1da1eff7f6a94910c" style="width: 100.0%; height: 100.0%;">Greece: Never Smoked (3652 cases)</div>`)[0];
+                popup_416d7684af207308c0ecf2b9b4e7a767.setContent(html_8cceaa5ead361aa1da1eff7f6a94910c);
+            
+        
+
+        marker_bdd3ed664f9777e392d17c9205b5f8f7.bindPopup(popup_416d7684af207308c0ecf2b9b4e7a767)
+        ;
+
+        
+    
+    
+            var circle_marker_6f3ab4a706f0a43b4d9875819cc9cee0 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.83421052631579, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_e2646f4bedd1174d6ff3ee39cd5a0e64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f96ab432bab3c9355ab42090edeb488 = $(`<div id="html_7f96ab432bab3c9355ab42090edeb488" style="width: 100.0%; height: 100.0%;">Finland: 3737 cases</div>`)[0];
+                popup_e2646f4bedd1174d6ff3ee39cd5a0e64.setContent(html_7f96ab432bab3c9355ab42090edeb488);
+            
+        
+
+        circle_marker_6f3ab4a706f0a43b4d9875819cc9cee0.bindPopup(popup_e2646f4bedd1174d6ff3ee39cd5a0e64)
+        ;
+
+        
+    
+    
+            var marker_eb06fffc7b665f8ec43e966262365065 = L.marker(
+                [63.346777700000004, 25.9209164],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_2f0b6cb2917b71de1c517c9bbe6d6670 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb06fffc7b665f8ec43e966262365065.setIcon(icon_2f0b6cb2917b71de1c517c9bbe6d6670);
+        
+    
+        var popup_bca8ebc376ca0e0cbe86b6bf152b03d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fdd9ba6ae2784d3eba8c60c43a67b94 = $(`<div id="html_9fdd9ba6ae2784d3eba8c60c43a67b94" style="width: 100.0%; height: 100.0%;">Finland: Never Smoked (3737 cases)</div>`)[0];
+                popup_bca8ebc376ca0e0cbe86b6bf152b03d9.setContent(html_9fdd9ba6ae2784d3eba8c60c43a67b94);
+            
+        
+
+        marker_eb06fffc7b665f8ec43e966262365065.bindPopup(popup_bca8ebc376ca0e0cbe86b6bf152b03d9)
+        ;
+
+        
+    
+    
+            var circle_marker_41fc1d431a229a631c283275074eb810 = L.circleMarker(
+                [55.670249, 10.3333283],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.684210526315788, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_08a41d93b5eaf2fad19269e5bf69c6f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e3ce462ca4f62e6ac051d2c8aa44f3 = $(`<div id="html_c8e3ce462ca4f62e6ac051d2c8aa44f3" style="width: 100.0%; height: 100.0%;">Denmark: 3680 cases</div>`)[0];
+                popup_08a41d93b5eaf2fad19269e5bf69c6f0.setContent(html_c8e3ce462ca4f62e6ac051d2c8aa44f3);
+            
+        
+
+        circle_marker_41fc1d431a229a631c283275074eb810.bindPopup(popup_08a41d93b5eaf2fad19269e5bf69c6f0)
+        ;
+
+        
+    
+    
+            var marker_6c324c6252db8eb8dd2318301fe821bb = L.marker(
+                [55.770249, 10.3333283],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_4660d8a7b86bc6cdc39960dd727ab84d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6c324c6252db8eb8dd2318301fe821bb.setIcon(icon_4660d8a7b86bc6cdc39960dd727ab84d);
+        
+    
+        var popup_8cb05fc46d4e4bc9438e440d4207d6d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c9b505c071e47e318730417a8e94926 = $(`<div id="html_8c9b505c071e47e318730417a8e94926" style="width: 100.0%; height: 100.0%;">Denmark: Former Smoker (3680 cases)</div>`)[0];
+                popup_8cb05fc46d4e4bc9438e440d4207d6d7.setContent(html_8c9b505c071e47e318730417a8e94926);
+            
+        
+
+        marker_6c324c6252db8eb8dd2318301fe821bb.bindPopup(popup_8cb05fc46d4e4bc9438e440d4207d6d7)
+        ;
+
+        
+    
+    
+            var circle_marker_4e2ca55ecb8a67c96f3b42d21a8ff344 = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.489473684210527, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_613899b1c8e93638eab69cfa68ccf58c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1f4a3d9c98c09efe2f85c5bfb08846f = $(`<div id="html_e1f4a3d9c98c09efe2f85c5bfb08846f" style="width: 100.0%; height: 100.0%;">France: 3606 cases</div>`)[0];
+                popup_613899b1c8e93638eab69cfa68ccf58c.setContent(html_e1f4a3d9c98c09efe2f85c5bfb08846f);
+            
+        
+
+        circle_marker_4e2ca55ecb8a67c96f3b42d21a8ff344.bindPopup(popup_613899b1c8e93638eab69cfa68ccf58c)
+        ;
+
+        
+    
+    
+            var marker_25d18c238012967f75b44a3fa1fccb3a = L.marker(
+                [46.703354000000004, 1.8883335],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_26bd2ff99fadb4c48c819bef6c31dbec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25d18c238012967f75b44a3fa1fccb3a.setIcon(icon_26bd2ff99fadb4c48c819bef6c31dbec);
+        
+    
+        var popup_c84633f461000234b0403c11c0f1ed61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1339e10bb2be4e7aae2a3bd54dc5281a = $(`<div id="html_1339e10bb2be4e7aae2a3bd54dc5281a" style="width: 100.0%; height: 100.0%;">France: Former Smoker (3606 cases)</div>`)[0];
+                popup_c84633f461000234b0403c11c0f1ed61.setContent(html_1339e10bb2be4e7aae2a3bd54dc5281a);
+            
+        
+
+        marker_25d18c238012967f75b44a3fa1fccb3a.bindPopup(popup_c84633f461000234b0403c11c0f1ed61)
+        ;
+
+        
+    
+    
+            var circle_marker_9394d1265500fe5936a112f0540102bd = L.circleMarker(
+                [48.7411522, 19.4528646],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.66315789473684, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_01f0f5c994b4719408bdaac5d9910943 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9746ff1e08c773f9ab9198945d8526ed = $(`<div id="html_9746ff1e08c773f9ab9198945d8526ed" style="width: 100.0%; height: 100.0%;">Slovakia: 3672 cases</div>`)[0];
+                popup_01f0f5c994b4719408bdaac5d9910943.setContent(html_9746ff1e08c773f9ab9198945d8526ed);
+            
+        
+
+        circle_marker_9394d1265500fe5936a112f0540102bd.bindPopup(popup_01f0f5c994b4719408bdaac5d9910943)
+        ;
+
+        
+    
+    
+            var marker_3b21db7476b24b0494827b7d69f4881f = L.marker(
+                [48.8411522, 19.4528646],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_201ee1124d00d8c2b8b23e86b7b8eab1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3b21db7476b24b0494827b7d69f4881f.setIcon(icon_201ee1124d00d8c2b8b23e86b7b8eab1);
+        
+    
+        var popup_279d0b7b86725e7da2b3b77be012f3f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_629a6507ac5c843bf3b3e4a727776019 = $(`<div id="html_629a6507ac5c843bf3b3e4a727776019" style="width: 100.0%; height: 100.0%;">Slovakia: Passive Smoker (3672 cases)</div>`)[0];
+                popup_279d0b7b86725e7da2b3b77be012f3f6.setContent(html_629a6507ac5c843bf3b3e4a727776019);
+            
+        
+
+        marker_3b21db7476b24b0494827b7d69f4881f.bindPopup(popup_279d0b7b86725e7da2b3b77be012f3f6)
+        ;
+
+        
+    
+    
+            var circle_marker_fa9ea0d14ff543a48d3ffa789abd2c18 = L.circleMarker(
+                [47.1817585, 19.5060937],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.863157894736844, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_a454c6d27765b37d9d3e9d58ac453efa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92b5ceda40855c0998c5e3f1081646a3 = $(`<div id="html_92b5ceda40855c0998c5e3f1081646a3" style="width: 100.0%; height: 100.0%;">Hungary: 3748 cases</div>`)[0];
+                popup_a454c6d27765b37d9d3e9d58ac453efa.setContent(html_92b5ceda40855c0998c5e3f1081646a3);
+            
+        
+
+        circle_marker_fa9ea0d14ff543a48d3ffa789abd2c18.bindPopup(popup_a454c6d27765b37d9d3e9d58ac453efa)
+        ;
+
+        
+    
+    
+            var marker_734b61f2b678011a161385668bdeb7aa = L.marker(
+                [47.2817585, 19.5060937],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_a055bdb58c7e4f97d3d3f3e40e848f4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_734b61f2b678011a161385668bdeb7aa.setIcon(icon_a055bdb58c7e4f97d3d3f3e40e848f4e);
+        
+    
+        var popup_4f3758a5492585afdd776277d06b26fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9db1b21e66db64df6aa8db02a31cada = $(`<div id="html_f9db1b21e66db64df6aa8db02a31cada" style="width: 100.0%; height: 100.0%;">Hungary: Passive Smoker (3748 cases)</div>`)[0];
+                popup_4f3758a5492585afdd776277d06b26fd.setContent(html_f9db1b21e66db64df6aa8db02a31cada);
+            
+        
+
+        marker_734b61f2b678011a161385668bdeb7aa.bindPopup(popup_4f3758a5492585afdd776277d06b26fd)
+        ;
+
+        
+    
+    
+            var circle_marker_7837387e558d3b5468fb227cd2ac408e = L.circleMarker(
+                [58.7523778, 25.3319078],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.77894736842105, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_a8692b3d4876333f85c5782f3c6ef71e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_276c510b0635e0c618bcddc071d110c0 = $(`<div id="html_276c510b0635e0c618bcddc071d110c0" style="width: 100.0%; height: 100.0%;">Estonia: 3716 cases</div>`)[0];
+                popup_a8692b3d4876333f85c5782f3c6ef71e.setContent(html_276c510b0635e0c618bcddc071d110c0);
+            
+        
+
+        circle_marker_7837387e558d3b5468fb227cd2ac408e.bindPopup(popup_a8692b3d4876333f85c5782f3c6ef71e)
+        ;
+
+        
+    
+    
+            var marker_6ea4ab4cbacf2449051d078b63aedca4 = L.marker(
+                [58.8523778, 25.3319078],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_c678fa6bcd50c70544c9edf829128b3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6ea4ab4cbacf2449051d078b63aedca4.setIcon(icon_c678fa6bcd50c70544c9edf829128b3c);
+        
+    
+        var popup_02f7bbd411d53517d1cae3a8b95fb6de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b649acacb094f8d7e7d6b0ff0ef0c3a = $(`<div id="html_6b649acacb094f8d7e7d6b0ff0ef0c3a" style="width: 100.0%; height: 100.0%;">Estonia: Passive Smoker (3716 cases)</div>`)[0];
+                popup_02f7bbd411d53517d1cae3a8b95fb6de.setContent(html_6b649acacb094f8d7e7d6b0ff0ef0c3a);
+            
+        
+
+        marker_6ea4ab4cbacf2449051d078b63aedca4.bindPopup(popup_02f7bbd411d53517d1cae3a8b95fb6de)
+        ;
+
+        
+    
+    
+            var circle_marker_e8ccd4ddd756a019f8f2134cd1044a3f = L.circleMarker(
+                [39.6621648, -8.1353519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.392105263157895, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_6e704760b408b34bface5287fe650559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d7afaecdabea8cf436f89fc4a8b8a21 = $(`<div id="html_8d7afaecdabea8cf436f89fc4a8b8a21" style="width: 100.0%; height: 100.0%;">Portugal: 3569 cases</div>`)[0];
+                popup_6e704760b408b34bface5287fe650559.setContent(html_8d7afaecdabea8cf436f89fc4a8b8a21);
+            
+        
+
+        circle_marker_e8ccd4ddd756a019f8f2134cd1044a3f.bindPopup(popup_6e704760b408b34bface5287fe650559)
+        ;
+
+        
+    
+    
+            var marker_c7b377f5fedd82be3ba83022435ac338 = L.marker(
+                [39.7621648, -8.1353519],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_d4dc5aa8b6489d948286b780d91f783b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c7b377f5fedd82be3ba83022435ac338.setIcon(icon_d4dc5aa8b6489d948286b780d91f783b);
+        
+    
+        var popup_7897a946f329c6b5b0f0841d54280ffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8694219087f173b3ccf4d40bcfa56528 = $(`<div id="html_8694219087f173b3ccf4d40bcfa56528" style="width: 100.0%; height: 100.0%;">Portugal: Passive Smoker (3569 cases)</div>`)[0];
+                popup_7897a946f329c6b5b0f0841d54280ffc.setContent(html_8694219087f173b3ccf4d40bcfa56528);
+            
+        
+
+        marker_c7b377f5fedd82be3ba83022435ac338.bindPopup(popup_7897a946f329c6b5b0f0841d54280ffc)
+        ;
+
+        
+    
+    
+            var circle_marker_0f0c202eeefb3706dba4ac78fbb426e6 = L.circleMarker(
+                [45.3658443, 15.6575209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.757894736842104, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_f9a11089aa3a8a68708adb2eaf5aae46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c982320b07baa77198e7efc893aa12e = $(`<div id="html_5c982320b07baa77198e7efc893aa12e" style="width: 100.0%; height: 100.0%;">Croatia: 3708 cases</div>`)[0];
+                popup_f9a11089aa3a8a68708adb2eaf5aae46.setContent(html_5c982320b07baa77198e7efc893aa12e);
+            
+        
+
+        circle_marker_0f0c202eeefb3706dba4ac78fbb426e6.bindPopup(popup_f9a11089aa3a8a68708adb2eaf5aae46)
+        ;
+
+        
+    
+    
+            var marker_de7dab13f589ebeaf98a107a9ccf12c6 = L.marker(
+                [45.4658443, 15.6575209],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_54d592a4de5141598b2c93354982d721 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de7dab13f589ebeaf98a107a9ccf12c6.setIcon(icon_54d592a4de5141598b2c93354982d721);
+        
+    
+        var popup_6fee27971016fa17588861acc311e3af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ffab120ea0c7a1b15c2603d61a72656 = $(`<div id="html_1ffab120ea0c7a1b15c2603d61a72656" style="width: 100.0%; height: 100.0%;">Croatia: Never Smoked (3708 cases)</div>`)[0];
+                popup_6fee27971016fa17588861acc311e3af.setContent(html_1ffab120ea0c7a1b15c2603d61a72656);
+            
+        
+
+        marker_de7dab13f589ebeaf98a107a9ccf12c6.bindPopup(popup_6fee27971016fa17588861acc311e3af)
+        ;
+
+        
+    
+    
+            var circle_marker_3e2295d3d469eb58ef157e26f33c168b = L.circleMarker(
+                [52.2434979, 5.6343227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.857894736842105, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_b1b7a9f8c6fdb775145a06efda1ec7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_900eb4f2cd9668d1e9226854f81318d5 = $(`<div id="html_900eb4f2cd9668d1e9226854f81318d5" style="width: 100.0%; height: 100.0%;">Netherlands: 3746 cases</div>`)[0];
+                popup_b1b7a9f8c6fdb775145a06efda1ec7a0.setContent(html_900eb4f2cd9668d1e9226854f81318d5);
+            
+        
+
+        circle_marker_3e2295d3d469eb58ef157e26f33c168b.bindPopup(popup_b1b7a9f8c6fdb775145a06efda1ec7a0)
+        ;
+
+        
+    
+    
+            var marker_abfe3a67ef36c7cdf6bf85093c0e521f = L.marker(
+                [52.3434979, 5.6343227],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_147f22e647481be78caf335bd40a84d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_abfe3a67ef36c7cdf6bf85093c0e521f.setIcon(icon_147f22e647481be78caf335bd40a84d5);
+        
+    
+        var popup_8b549ac205df50a65d5b4e13746503d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92c145773e06b01e4912347e0fceae47 = $(`<div id="html_92c145773e06b01e4912347e0fceae47" style="width: 100.0%; height: 100.0%;">Netherlands: Current Smoker (3746 cases)</div>`)[0];
+                popup_8b549ac205df50a65d5b4e13746503d0.setContent(html_92c145773e06b01e4912347e0fceae47);
+            
+        
+
+        marker_abfe3a67ef36c7cdf6bf85093c0e521f.bindPopup(popup_8b549ac205df50a65d5b4e13746503d0)
+        ;
+
+        
+    
+    
+            var circle_marker_756c8dd472774fabdf7f886023cf9d93 = L.circleMarker(
+                [47.59397, 14.12456],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.742105263157896, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_cfe8d014d24c49f5e753ba25930a2dac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69760837ffe5219bd1b22382141a8a1c = $(`<div id="html_69760837ffe5219bd1b22382141a8a1c" style="width: 100.0%; height: 100.0%;">Austria: 3702 cases</div>`)[0];
+                popup_cfe8d014d24c49f5e753ba25930a2dac.setContent(html_69760837ffe5219bd1b22382141a8a1c);
+            
+        
+
+        circle_marker_756c8dd472774fabdf7f886023cf9d93.bindPopup(popup_cfe8d014d24c49f5e753ba25930a2dac)
+        ;
+
+        
+    
+    
+            var marker_1545e24ac440f44e06e6ffef7ac69568 = L.marker(
+                [47.69397, 14.12456],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_f01f89dfba5e23a65c1f855c2c3ad802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1545e24ac440f44e06e6ffef7ac69568.setIcon(icon_f01f89dfba5e23a65c1f855c2c3ad802);
+        
+    
+        var popup_60d97ca389edd303906255ba35cb3bf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57a47121bccd057fbf0b178d9d3cf85e = $(`<div id="html_57a47121bccd057fbf0b178d9d3cf85e" style="width: 100.0%; height: 100.0%;">Austria: Current Smoker (3702 cases)</div>`)[0];
+                popup_60d97ca389edd303906255ba35cb3bf0.setContent(html_57a47121bccd057fbf0b178d9d3cf85e);
+            
+        
+
+        marker_1545e24ac440f44e06e6ffef7ac69568.bindPopup(popup_60d97ca389edd303906255ba35cb3bf0)
+        ;
+
+        
+    
+    
+            var circle_marker_7eefbf449885af28c340066c32f6d6b7 = L.circleMarker(
+                [52.215933, 19.134422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.83421052631579, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_c94a50b14143ef6b2904abb4e2d7b694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb707325e235c40c08bd04c4cfb6a98d = $(`<div id="html_eb707325e235c40c08bd04c4cfb6a98d" style="width: 100.0%; height: 100.0%;">Poland: 3737 cases</div>`)[0];
+                popup_c94a50b14143ef6b2904abb4e2d7b694.setContent(html_eb707325e235c40c08bd04c4cfb6a98d);
+            
+        
+
+        circle_marker_7eefbf449885af28c340066c32f6d6b7.bindPopup(popup_c94a50b14143ef6b2904abb4e2d7b694)
+        ;
+
+        
+    
+    
+            var marker_88a09a51d559aa987e968e75e31d7377 = L.marker(
+                [52.315933, 19.134422],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_9dbe41d57fd60c06d8fc15ec72a7ed83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_88a09a51d559aa987e968e75e31d7377.setIcon(icon_9dbe41d57fd60c06d8fc15ec72a7ed83);
+        
+    
+        var popup_854df3e6130f0612fd5bfc0a891361c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3f9061fb0ed01c87f02880477201e9e = $(`<div id="html_c3f9061fb0ed01c87f02880477201e9e" style="width: 100.0%; height: 100.0%;">Poland: Former Smoker (3737 cases)</div>`)[0];
+                popup_854df3e6130f0612fd5bfc0a891361c4.setContent(html_c3f9061fb0ed01c87f02880477201e9e);
+            
+        
+
+        marker_88a09a51d559aa987e968e75e31d7377.bindPopup(popup_854df3e6130f0612fd5bfc0a891361c4)
+        ;
+
+        
+    
+    
+            var circle_marker_a9dcecac14091d365203d6f8da06ac41 = L.circleMarker(
+                [55.3500003, 23.7499997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.707894736842107, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_e555e242d504838fcecccc0f91bd69c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_802740d031f65cc9248e96b73e36e6c1 = $(`<div id="html_802740d031f65cc9248e96b73e36e6c1" style="width: 100.0%; height: 100.0%;">Lithuania: 3689 cases</div>`)[0];
+                popup_e555e242d504838fcecccc0f91bd69c7.setContent(html_802740d031f65cc9248e96b73e36e6c1);
+            
+        
+
+        circle_marker_a9dcecac14091d365203d6f8da06ac41.bindPopup(popup_e555e242d504838fcecccc0f91bd69c7)
+        ;
+
+        
+    
+    
+            var marker_d9b1107d4ae598d37249fc955d815c89 = L.marker(
+                [55.4500003, 23.7499997],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_34cf9893a10d3e6bdbb7a41171bd410f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d9b1107d4ae598d37249fc955d815c89.setIcon(icon_34cf9893a10d3e6bdbb7a41171bd410f);
+        
+    
+        var popup_1a48463f75fb8fca8580dbd993b2deab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d37599e9ae4db362ec9f5322814fbfc3 = $(`<div id="html_d37599e9ae4db362ec9f5322814fbfc3" style="width: 100.0%; height: 100.0%;">Lithuania: Passive Smoker (3689 cases)</div>`)[0];
+                popup_1a48463f75fb8fca8580dbd993b2deab.setContent(html_d37599e9ae4db362ec9f5322814fbfc3);
+            
+        
+
+        marker_d9b1107d4ae598d37249fc955d815c89.bindPopup(popup_1a48463f75fb8fca8580dbd993b2deab)
+        ;
+
+        
+    
+    
+            var circle_marker_ef711ddedd4eee50dfa5f57469fd8dc5 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.863157894736844, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_a9d86ea9cc305085ea8ddc9f4517839a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8e17a6ba366173b70e748b02e68778d = $(`<div id="html_e8e17a6ba366173b70e748b02e68778d" style="width: 100.0%; height: 100.0%;">Italy: 3748 cases</div>`)[0];
+                popup_a9d86ea9cc305085ea8ddc9f4517839a.setContent(html_e8e17a6ba366173b70e748b02e68778d);
+            
+        
+
+        circle_marker_ef711ddedd4eee50dfa5f57469fd8dc5.bindPopup(popup_a9d86ea9cc305085ea8ddc9f4517839a)
+        ;
+
+        
+    
+    
+            var marker_a04dec6096cf08bc07f56398c96210c4 = L.marker(
+                [42.7384261, 12.674297],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_c1fa4695aee981bc2ad5dc4b3919b9e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a04dec6096cf08bc07f56398c96210c4.setIcon(icon_c1fa4695aee981bc2ad5dc4b3919b9e3);
+        
+    
+        var popup_900b19141ad8cd87bb04d6bd7cea198b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ddc64612f9164f9745bb6706005be6 = $(`<div id="html_67ddc64612f9164f9745bb6706005be6" style="width: 100.0%; height: 100.0%;">Italy: Never Smoked (3748 cases)</div>`)[0];
+                popup_900b19141ad8cd87bb04d6bd7cea198b.setContent(html_67ddc64612f9164f9745bb6706005be6);
+            
+        
+
+        marker_a04dec6096cf08bc07f56398c96210c4.bindPopup(popup_900b19141ad8cd87bb04d6bd7cea198b)
+        ;
+
+        
+    
+    
+            var circle_marker_73181f9fbb8ff08a6dc5c3a1c6fa082c = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.74736842105263, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_ec476c790bef6852a1089f4fe775c00f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b86bbd4424fab38d00d5fab8820a2c3e = $(`<div id="html_b86bbd4424fab38d00d5fab8820a2c3e" style="width: 100.0%; height: 100.0%;">Belgium: 3704 cases</div>`)[0];
+                popup_ec476c790bef6852a1089f4fe775c00f.setContent(html_b86bbd4424fab38d00d5fab8820a2c3e);
+            
+        
+
+        circle_marker_73181f9fbb8ff08a6dc5c3a1c6fa082c.bindPopup(popup_ec476c790bef6852a1089f4fe775c00f)
+        ;
+
+        
+    
+    
+            var marker_b298a7ba02e2a34898055b99d1256036 = L.marker(
+                [50.7402809, 4.6667145],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_0340422a89e07a0ba5108a0f687c7bdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b298a7ba02e2a34898055b99d1256036.setIcon(icon_0340422a89e07a0ba5108a0f687c7bdc);
+        
+    
+        var popup_009be5344a7893159f6f03ac67ea854a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b9042212992cdabd5664e8e52c3d924 = $(`<div id="html_1b9042212992cdabd5664e8e52c3d924" style="width: 100.0%; height: 100.0%;">Belgium: Current Smoker (3704 cases)</div>`)[0];
+                popup_009be5344a7893159f6f03ac67ea854a.setContent(html_1b9042212992cdabd5664e8e52c3d924);
+            
+        
+
+        marker_b298a7ba02e2a34898055b99d1256036.bindPopup(popup_009be5344a7893159f6f03ac67ea854a)
+        ;
+
+        
+    
+    
+            var circle_marker_4206ee7c0977e9fd21696019ce652e68 = L.circleMarker(
+                [46.1199444, 14.8153333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.61578947368421, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_1c844c1a8d94fe615ffecf23d808accb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_645fda3c59fee0410d78b83288fbccd8 = $(`<div id="html_645fda3c59fee0410d78b83288fbccd8" style="width: 100.0%; height: 100.0%;">Slovenia: 3654 cases</div>`)[0];
+                popup_1c844c1a8d94fe615ffecf23d808accb.setContent(html_645fda3c59fee0410d78b83288fbccd8);
+            
+        
+
+        circle_marker_4206ee7c0977e9fd21696019ce652e68.bindPopup(popup_1c844c1a8d94fe615ffecf23d808accb)
+        ;
+
+        
+    
+    
+            var marker_c30e18371b71458cfc3bd122ea6360cf = L.marker(
+                [46.2199444, 14.8153333],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_7f2bfde1f9cddd1eb7c115b13853a8d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c30e18371b71458cfc3bd122ea6360cf.setIcon(icon_7f2bfde1f9cddd1eb7c115b13853a8d7);
+        
+    
+        var popup_91ccc133a3495fff9f8523e314bc5161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3890a1e348f21c5a7130f8514094e0f = $(`<div id="html_b3890a1e348f21c5a7130f8514094e0f" style="width: 100.0%; height: 100.0%;">Slovenia: Former Smoker (3654 cases)</div>`)[0];
+                popup_91ccc133a3495fff9f8523e314bc5161.setContent(html_b3890a1e348f21c5a7130f8514094e0f);
+            
+        
+
+        marker_c30e18371b71458cfc3bd122ea6360cf.bindPopup(popup_91ccc133a3495fff9f8523e314bc5161)
+        ;
+
+        
+    
+    
+            var circle_marker_d63d8e7cab9529a85259072786a36145 = L.circleMarker(
+                [52.865196, -7.9794599],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.821052631578947, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_5b85edeffc94e1f24703473f936c7689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e4a3dd439ae9dbeb42f909e11af9b80 = $(`<div id="html_9e4a3dd439ae9dbeb42f909e11af9b80" style="width: 100.0%; height: 100.0%;">Ireland: 3732 cases</div>`)[0];
+                popup_5b85edeffc94e1f24703473f936c7689.setContent(html_9e4a3dd439ae9dbeb42f909e11af9b80);
+            
+        
+
+        circle_marker_d63d8e7cab9529a85259072786a36145.bindPopup(popup_5b85edeffc94e1f24703473f936c7689)
+        ;
+
+        
+    
+    
+            var marker_4d175f6ea8176073b2f0d4f3e5867c87 = L.marker(
+                [52.965196, -7.9794599],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_925040f3deb133210a4e9fea862691e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d175f6ea8176073b2f0d4f3e5867c87.setIcon(icon_925040f3deb133210a4e9fea862691e5);
+        
+    
+        var popup_8cf297073de779eb1bd6ad8527f7f74d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7666699c588046c4e02d282657022d2 = $(`<div id="html_f7666699c588046c4e02d282657022d2" style="width: 100.0%; height: 100.0%;">Ireland: Never Smoked (3732 cases)</div>`)[0];
+                popup_8cf297073de779eb1bd6ad8527f7f74d.setContent(html_f7666699c588046c4e02d282657022d2);
+            
+        
+
+        marker_4d175f6ea8176073b2f0d4f3e5867c87.bindPopup(popup_8cf297073de779eb1bd6ad8527f7f74d)
+        ;
+
+        
+    
+    
+            var circle_marker_86bc591e3180ea2a30a16d3542e05945 = L.circleMarker(
+                [39.3260685, -4.8379791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.760526315789473, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_07f0d47f07265ef57eeeaba00e074fcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3f0f70eb86617c746b6ac490972f953 = $(`<div id="html_a3f0f70eb86617c746b6ac490972f953" style="width: 100.0%; height: 100.0%;">Spain: 3709 cases</div>`)[0];
+                popup_07f0d47f07265ef57eeeaba00e074fcf.setContent(html_a3f0f70eb86617c746b6ac490972f953);
+            
+        
+
+        circle_marker_86bc591e3180ea2a30a16d3542e05945.bindPopup(popup_07f0d47f07265ef57eeeaba00e074fcf)
+        ;
+
+        
+    
+    
+            var marker_b2f3a5e94427844626e90f15e7851bb9 = L.marker(
+                [39.4260685, -4.8379791],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_1bbba40122b7a538f7f9c1fd1f0ad542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b2f3a5e94427844626e90f15e7851bb9.setIcon(icon_1bbba40122b7a538f7f9c1fd1f0ad542);
+        
+    
+        var popup_98f119a75295c3e62aea63a61ca77781 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_176d6a8adbf6f72316eaa09470032758 = $(`<div id="html_176d6a8adbf6f72316eaa09470032758" style="width: 100.0%; height: 100.0%;">Spain: Passive Smoker (3709 cases)</div>`)[0];
+                popup_98f119a75295c3e62aea63a61ca77781.setContent(html_176d6a8adbf6f72316eaa09470032758);
+            
+        
+
+        marker_b2f3a5e94427844626e90f15e7851bb9.bindPopup(popup_98f119a75295c3e62aea63a61ca77781)
+        ;
+
+        
+    
+    
+            var circle_marker_144260de543ee95e40e8b03c8e8f7bce = L.circleMarker(
+                [59.6749712, 14.5208584],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.83421052631579, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_b02a77ca37d80d2ed3d5191707ddf0de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aacbd788b11fbdfff90942021df19ca9 = $(`<div id="html_aacbd788b11fbdfff90942021df19ca9" style="width: 100.0%; height: 100.0%;">Sweden: 3737 cases</div>`)[0];
+                popup_b02a77ca37d80d2ed3d5191707ddf0de.setContent(html_aacbd788b11fbdfff90942021df19ca9);
+            
+        
+
+        circle_marker_144260de543ee95e40e8b03c8e8f7bce.bindPopup(popup_b02a77ca37d80d2ed3d5191707ddf0de)
+        ;
+
+        
+    
+    
+            var marker_6f96cda6ffd40d9f1edaf87d3f5194c1 = L.marker(
+                [59.7749712, 14.5208584],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_3ecb3266944553a7989f58b442a1beb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6f96cda6ffd40d9f1edaf87d3f5194c1.setIcon(icon_3ecb3266944553a7989f58b442a1beb4);
+        
+    
+        var popup_620ee8e9f127d1ac0712fe958b968192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4f9a8c6dcc643c2a57f107b0923273f = $(`<div id="html_b4f9a8c6dcc643c2a57f107b0923273f" style="width: 100.0%; height: 100.0%;">Sweden: Former Smoker (3737 cases)</div>`)[0];
+                popup_620ee8e9f127d1ac0712fe958b968192.setContent(html_b4f9a8c6dcc643c2a57f107b0923273f);
+            
+        
+
+        marker_6f96cda6ffd40d9f1edaf87d3f5194c1.bindPopup(popup_620ee8e9f127d1ac0712fe958b968192)
+        ;
+
+        
+    
+    
+            var circle_marker_615331e08066f08bea8c3cba16d2da18 = L.circleMarker(
+                [42.6073975, 25.4856617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.789473684210527, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_9888d258e301315b1f3c2db2d3cf78a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f5e72422c2a89207cbdf92439f6ec5 = $(`<div id="html_85f5e72422c2a89207cbdf92439f6ec5" style="width: 100.0%; height: 100.0%;">Bulgaria: 3720 cases</div>`)[0];
+                popup_9888d258e301315b1f3c2db2d3cf78a1.setContent(html_85f5e72422c2a89207cbdf92439f6ec5);
+            
+        
+
+        circle_marker_615331e08066f08bea8c3cba16d2da18.bindPopup(popup_9888d258e301315b1f3c2db2d3cf78a1)
+        ;
+
+        
+    
+    
+            var marker_88690b067ec8fb7a5da18b379b48da9d = L.marker(
+                [42.7073975, 25.4856617],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_4502af77a1120275d393b91c34c5e85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_88690b067ec8fb7a5da18b379b48da9d.setIcon(icon_4502af77a1120275d393b91c34c5e85c);
+        
+    
+        var popup_c9c98167df4674fd66babf72ab38d386 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b47ce1378272e94a493f52ce176e8188 = $(`<div id="html_b47ce1378272e94a493f52ce176e8188" style="width: 100.0%; height: 100.0%;">Bulgaria: Current Smoker (3720 cases)</div>`)[0];
+                popup_c9c98167df4674fd66babf72ab38d386.setContent(html_b47ce1378272e94a493f52ce176e8188);
+            
+        
+
+        marker_88690b067ec8fb7a5da18b379b48da9d.bindPopup(popup_c9c98167df4674fd66babf72ab38d386)
+        ;
+
+        
+    
+    
+            var circle_marker_4823c6d0415f13c5af464e995c67a429 = L.circleMarker(
+                [35.8885993, 14.4476911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_0d51051f04f56020603112bc0340151b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abafb044f51bb1ee786d298ab9f92f0d = $(`<div id="html_abafb044f51bb1ee786d298ab9f92f0d" style="width: 100.0%; height: 100.0%;">Malta: 3800 cases</div>`)[0];
+                popup_0d51051f04f56020603112bc0340151b.setContent(html_abafb044f51bb1ee786d298ab9f92f0d);
+            
+        
+
+        circle_marker_4823c6d0415f13c5af464e995c67a429.bindPopup(popup_0d51051f04f56020603112bc0340151b)
+        ;
+
+        
+    
+    
+            var marker_d1d29d147633235f4b26e1a484684b1e = L.marker(
+                [35.988599300000004, 14.4476911],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_e82229d7fe31d46d7a2198835bfc7337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d1d29d147633235f4b26e1a484684b1e.setIcon(icon_e82229d7fe31d46d7a2198835bfc7337);
+        
+    
+        var popup_66835928de816a63430826b757625f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_490c1e2170192e4d4d7501aae5e8d21b = $(`<div id="html_490c1e2170192e4d4d7501aae5e8d21b" style="width: 100.0%; height: 100.0%;">Malta: Current Smoker (3800 cases)</div>`)[0];
+                popup_66835928de816a63430826b757625f92.setContent(html_490c1e2170192e4d4d7501aae5e8d21b);
+            
+        
+
+        marker_d1d29d147633235f4b26e1a484684b1e.bindPopup(popup_66835928de816a63430826b757625f92)
+        ;
+
+        
+    
+    
+            var circle_marker_38dfa7573290fd67b5fbb607e6b9fba5 = L.circleMarker(
+                [49.6112768, 6.129799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.710526315789473, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_33637c850c74ea5ac101566d411c51e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32d5302b100981df284936434345656d = $(`<div id="html_32d5302b100981df284936434345656d" style="width: 100.0%; height: 100.0%;">Luxembourg: 3690 cases</div>`)[0];
+                popup_33637c850c74ea5ac101566d411c51e3.setContent(html_32d5302b100981df284936434345656d);
+            
+        
+
+        circle_marker_38dfa7573290fd67b5fbb607e6b9fba5.bindPopup(popup_33637c850c74ea5ac101566d411c51e3)
+        ;
+
+        
+    
+    
+            var marker_d4518c7c90f14e12f45e0e69914a2a47 = L.marker(
+                [49.7112768, 6.129799],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_46c27c76813cc13d0f1dfef3532bc999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d4518c7c90f14e12f45e0e69914a2a47.setIcon(icon_46c27c76813cc13d0f1dfef3532bc999);
+        
+    
+        var popup_991e4e9ee36389a1961cd5a2eabd5f0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6a10452e749bc4732e26ff8e7bce0ae = $(`<div id="html_a6a10452e749bc4732e26ff8e7bce0ae" style="width: 100.0%; height: 100.0%;">Luxembourg: Passive Smoker (3690 cases)</div>`)[0];
+                popup_991e4e9ee36389a1961cd5a2eabd5f0f.setContent(html_a6a10452e749bc4732e26ff8e7bce0ae);
+            
+        
+
+        marker_d4518c7c90f14e12f45e0e69914a2a47.bindPopup(popup_991e4e9ee36389a1961cd5a2eabd5f0f)
+        ;
+
+        
+    
+    
+            var circle_marker_2d94c5fab18cbebe6d1d689fc5502b73 = L.circleMarker(
+                [34.9174159, 32.889902651331866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.810526315789474, "stroke": true, "weight": 3}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+        var popup_b469baa8ff506f049ab2b65ec4c77ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bee60fed2844dbe43c4ab21cd8cf1667 = $(`<div id="html_bee60fed2844dbe43c4ab21cd8cf1667" style="width: 100.0%; height: 100.0%;">Cyprus: 3728 cases</div>`)[0];
+                popup_b469baa8ff506f049ab2b65ec4c77ac4.setContent(html_bee60fed2844dbe43c4ab21cd8cf1667);
+            
+        
+
+        circle_marker_2d94c5fab18cbebe6d1d689fc5502b73.bindPopup(popup_b469baa8ff506f049ab2b65ec4c77ac4)
+        ;
+
+        
+    
+    
+            var marker_c501967f9cc69447dd26a419d588ccad = L.marker(
+                [35.0174159, 32.889902651331866],
+                {}
+            ).addTo(map_0dc327cc90347a46251909d1f95d2b0f);
+        
+    
+            var icon_d32e9e7962f07dbaf509bedca5a76046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c501967f9cc69447dd26a419d588ccad.setIcon(icon_d32e9e7962f07dbaf509bedca5a76046);
+        
+    
+        var popup_e0895e8186d80dd6d31f7b24726c4723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a72a264ac5e6a6834e3a5b50679cb0e = $(`<div id="html_9a72a264ac5e6a6834e3a5b50679cb0e" style="width: 100.0%; height: 100.0%;">Cyprus: Former Smoker (3728 cases)</div>`)[0];
+                popup_e0895e8186d80dd6d31f7b24726c4723.setContent(html_9a72a264ac5e6a6834e3a5b50679cb0e);
+            
+        
+
+        marker_c501967f9cc69447dd26a419d588ccad.bindPopup(popup_e0895e8186d80dd6d31f7b24726c4723)
+        ;
+
+        
+    
+</script>
+</html>
